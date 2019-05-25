@@ -1,0 +1,17 @@
+  .alternative__img-wrapper {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .alternative__img-wrapper img{
+    width: 30%;
+    height: 90%;
+  }
+
+  .feature-list {
+    font-size: 2rem
+  }

@@ -1,49 +1,122 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+  <title>Webpack Short Intro</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <!-- Printing and PDF exports -->
+  <script>
+   var link = document.createElement( 'link' );
+   link.rel = 'stylesheet';
+   link.type = 'text/css';
+   link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+   document.getElementsByTagName( 'head' )[0].appendChild( link );
+ </script>
 
-		<script src="js/reveal.js"></script>
+  <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+  <div class="reveal">
+   <div class="slides">
+    <section>
+      <h1>Webpack Short Intro</h1>
+      <img src="img/webpack.png" alt="">
+    </section>
+    <section>
+      <h2>Alternative?</h2>
+      <div class="alternative__img-wrapper">
+        <img src="img/grunt.png" alt="">
+        <img src="img/gulp.png" alt="">
+        <img src="img/browserify.png" alt="">
+      </div>
+    </section>
+    <section>
+      <h1>Features</h1>
+      <ul class="feature-list">
+        <li>Bundling using dependency graph & IIFE</li>
+        <li>Create dependencies from js (default), css, html and others</li>
+        <li>Transpilation / Transciprion: Babel, TypeSctipt, Sass</li>
+        <li>Linter, CSSComb</li>
+        <li>Livereload & Hot Module Replacement</li>
+        <li>Optimization:
+        <ul>
+          <li>UglifyJS</li>
+          <li>Tree Shaking</li>
+          <li>Code Spliting:
+          <ul>
+            <li>Cache</li>
+            <li>Lazy Load</li>
+          </ul>
+        </li>
+        <ul>
+    </section>
+    <section>
+      <h2>Installation</h2>
+      <div>npm install webpack</div>
+      <div>npm install webpack-cli</div>
+      <div>npm install webpack-dev-server</div>
+    </section>
+    <section>
+      <h2>Configure & Main Conception</h2>
+      <section>
+      <ul>
+        <li>Entry</li>
+        <li>Output</li>
+        <li>Loaders</li>
+        <li>Plugins</li>
+        <li>Mode</li>
+      </ul>
+      </section>
+      <section>
+        <h3>Entry & Output</h3>
+        <img src="img/entry-point.JPG" alt="">
+      </section>
+      <section>
+        <h3>Loaders</h3>
+        <img src="img/modules.JPG" alt="">
+      </section>
+      <section>
+        <h3>Plugins</h3>
+        <img src="img/plugins.JPG" alt="">
+      </section>
+      <section>
+        <h3>Mode</h3>
+        <img src="img/mode.JPG" alt="">
+      </section>
+    </section>
+    <section>
+      <h2>Thanks for watching</h2>
+      <div>https://webpack.js.org/</div>
+      <div>https://webpack.js.org/configuration</div>
+      <div>https://webpack.js.org/loaders</div>
+      <div>https://webpack.js.org/plugins</div>
+    </section>
+  </div>
+</div>
 
-		<script>
+<script src="js/reveal.js"></script>
+
+<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
-</html>
+       { src: 'plugin/markdown/marked.js' },
+       { src: 'plugin/markdown/markdown.js' },
+       { src: 'plugin/notes/notes.js', async: true },
+       { src: 'plugin/highlight/highlight.js', async: true }
+       ]
+     });
+   </script>
+ </body>
+ </html>
